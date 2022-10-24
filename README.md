@@ -4,7 +4,7 @@
 ![godocmd](https://github.com/tjgurwara99/Go/workflows/godocmd/badge.svg)
 ![](https://img.shields.io/github/repo-size/TheAlgorithms/Go.svg?label=Repo%20size&style=flat-square)&nbsp;
 ![update_directory_md](https://github.com/TheAlgorithms/Go/workflows/update_directory_md/badge.svg)
-[![Discord chat](https://img.shields.io/discord/808045925556682782.svg?logo=discord&colorB=7289DA&style=flat-square)](https://discord.gg/c7MnfGFGa6)&nbsp;
+[![Discord chat](https://img.shields.io/discord/808045925556682782.svg?logo=discord&colorB=7289DA&style=flat-square)](https://the-algorithms.com/discord/)&nbsp;
 
 ### Algorithms implemented in Go (for education)
 
@@ -58,28 +58,6 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 
 ---
 </details><details>
-	<summary> <strong> avl </strong> </summary>	
-
----
-
-#####  Package avl is a Adelson-Velskii and Landis tree implemnation avl is self-balancing tree, i.e for all node in a tree, height difference between its left and right child will not exceed 1 more information : https://en.wikipedia.org/wiki/AVL_tree
-
----
-##### Functions:
-
-1. [`Delete`](./structure/avl/avl.go#L72):  Delete : remove given key from the tree
-2. [`Get`](./structure/avl/avl.go#L20):  Get : return node with given key
-3. [`Insert`](./structure/avl/avl.go#L35):  Insert a new item
-4. [`NewTree`](./structure/avl/avl.go#L15):  NewTree create a new AVL tree
-
----
-##### Types
-
-1. [`Node`](./structure/avl/avl.go#L8): No description provided.
-
-
----
-</details><details>
 	<summary> <strong> binary </strong> </summary>	
 
 ---
@@ -100,33 +78,6 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 9. [`SequenceGrayCode`](./math/binary/rbc.go#L11):  SequenceGrayCode The function generates an "Gray code" sequence of length n
 10. [`Sqrt`](./math/binary/sqrt.go#L16): No description provided.
 11. [`XorSearchMissingNumber`](./math/binary/xorsearch.go#L11):  XorSearchMissingNumber This function finds a missing number in a sequence
-
----
-</details><details>
-	<summary> <strong> binarytree </strong> </summary>	
-
----
-
-##### Functions:
-
-1. [`AccessNodesByLayer`](./structure/binarysearchtree/bstree.go#L145):  AccessNodesByLayer Function that access nodes layer by layer instead of printing the results as one line.
-2. [`BstDelete`](./structure/binarysearchtree/bstree.go#L44):  BstDelete removes the node
-3. [`InOrder`](./structure/binarysearchtree/bstree.go#L79):  Travers the tree in the following order left --> root --> right
-4. [`InOrderSuccessor`](./structure/binarysearchtree/bstree.go#L35):  InOrderSuccessor Goes to the left
-5. [`Insert`](./structure/binarysearchtree/bstree.go#L17):  Insert a value in the BSTree
-6. [`LevelOrder`](./structure/binarysearchtree/bstree.go#L138): No description provided.
-7. [`Max`](./structure/binarysearchtree/bstree.go#L174):  Max Function that returns max of two numbers - possibly already declared.
-8. [`NewNode`](./structure/binarysearchtree/node.go#L11):  NewNode Returns a new pointer to an empty Node
-9. [`PostOrder`](./structure/binarysearchtree/bstree.go#L113):  Travers the tree in the following order left --> right --> root
-10. [`PreOrder`](./structure/binarysearchtree/bstree.go#L96):  Travers the tree in the following order root --> left --> right
-
----
-##### Types
-
-1. [`BSTree`](./structure/binarysearchtree/bstree.go#L4): No description provided.
-
-2. [`Node`](./structure/binarysearchtree/node.go#L4): No description provided.
-
 
 ---
 </details><details>
@@ -501,7 +452,7 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 
 ---
 
-#####  Package linkedlist demonstates different implementations on linkedlists.
+#####  Package linkedlist demonstrates different implementations on linkedlists.
 
 ---
 ##### Functions:
@@ -548,12 +499,20 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 ##### Functions:
 
 1. [`Abs`](./math/abs.go#L11):  Abs returns absolute value
-2. [`Cos`](./math/cos.go#L10):  Cos  returns the cosine of the radian argument x. [See more](https://en.wikipedia.org/wiki/Sine_and_cosine) [Based on the idea of Bhaskara approximation of cos(x)](https://math.stackexchange.com/questions/3886552/bhaskara-approximation-of-cosx)
-3. [`FindKthMax`](./math/kthnumber.go#L11):  FindKthMax returns the kth large element given an integer slice with nil `error` if found and returns -1 with `error` `search.ErrNotFound` if not found. NOTE: The `nums` slice gets mutated in the process.
-4. [`FindKthMin`](./math/kthnumber.go#L19):  FindKthMin returns kth small element given an integer slice with nil `error` if found and returns -1 with `error` `search.ErrNotFound` if not found. NOTE: The `nums` slice gets mutated in the process.
-5. [`IsPowOfTwoUseLog`](./math/checkisnumberpoweroftwo.go#L10):  IsPowOfTwoUseLog This function checks if a number is a power of two using the logarithm. The limiting degree can be from 0 to 63. See alternatives in the binary package.
-6. [`Phi`](./math/eulertotient.go#L5):  Phi is the Euler totient function. This function computes the number of numbers less then n that are coprime with n.
-7. [`Sin`](./math/sin.go#L9):  Sin returns the sine of the radian argument x. [See more](https://en.wikipedia.org/wiki/Sine_and_cosine)
+2. [`Combinations`](./math/binomialcoefficient.go#L20):  C is Binomial Coefficient function This function returns C(n, k) for given n and k
+3. [`Cos`](./math/cos.go#L10):  Cos  returns the cosine of the radian argument x. [See more](https://en.wikipedia.org/wiki/Sine_and_cosine) [Based on the idea of Bhaskara approximation of cos(x)](https://math.stackexchange.com/questions/3886552/bhaskara-approximation-of-cosx)
+4. [`DefaultPolynomial`](./math/pollard.go#L16):  DefaultPolynomial is the commonly used polynomial g(x) = (x^2 + 1) mod n
+5. [`FindKthMax`](./math/kthnumber.go#L11):  FindKthMax returns the kth large element given an integer slice with nil `error` if found and returns -1 with `error` `search.ErrNotFound` if not found. NOTE: The `nums` slice gets mutated in the process.
+6. [`FindKthMin`](./math/kthnumber.go#L19):  FindKthMin returns kth small element given an integer slice with nil `error` if found and returns -1 with `error` `search.ErrNotFound` if not found. NOTE: The `nums` slice gets mutated in the process.
+7. [`IsPowOfTwoUseLog`](./math/checkisnumberpoweroftwo.go#L10):  IsPowOfTwoUseLog This function checks if a number is a power of two using the logarithm. The limiting degree can be from 0 to 63. See alternatives in the binary package.
+8. [`LiouvilleLambda`](./math/liouville.go#L24):  Lambda is the liouville function This function returns λ(n) for given number
+9. [`Mean`](./math/mean.go#L7): No description provided.
+10. [`Median`](./math/median.go#L12): No description provided.
+11. [`Mode`](./math/mode.go#L19): No description provided.
+12. [`Mu`](./math/mobius.go#L21):  Mu is the Mobius function This function returns μ(n) for given number
+13. [`Phi`](./math/eulertotient.go#L5):  Phi is the Euler totient function. This function computes the number of numbers less then n that are coprime with n.
+14. [`PollardsRhoFactorization`](./math/pollard.go#L29):  PollardsRhoFactorization is an implementation of Pollard's rho factorization algorithm using the default parameters x = y = 2
+15. [`Sin`](./math/sin.go#L9):  Sin returns the sine of the radian argument x. [See more](https://en.wikipedia.org/wiki/Sine_and_cosine)
 
 ---
 </details><details>
@@ -919,6 +878,19 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 
 ---
 </details><details>
+	<summary> <strong> strings </strong> </summary>	
+
+---
+
+#####  Package strings is a package that contains all algorithms that are used to analyse and manipulate strings.
+
+---
+##### Functions:
+
+1. [`CountChars`](./strings/charoccurrence.go#L12):  CountChars counts the number of a times a character has occurred in the provided string argument and returns a map with `rune` as keys and the count as value.
+
+---
+</details><details>
 	<summary> <strong> transposition </strong> </summary>	
 
 ---
@@ -935,6 +907,43 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 
 2. [`NoTextToEncryptError`](./cipher/transposition/transposition.go#L15): No description provided.
 
+
+---
+</details><details>
+	<summary> <strong> tree </strong> </summary>	
+
+---
+
+#####  For more details check out those links below here: Wikipedia article: https://en.wikipedia.org/wiki/Binary_search_tree authors [guuzaa](https://github.com/guuzaa)
+
+---
+##### Functions:
+
+1. [`NewAVL`](./structure/tree/avl.go#L13):  NewAVL create a novel AVL tree
+2. [`NewBinarySearch`](./structure/tree/bstree.go#L18):  NewBinarySearch create a novel Binary-Search tree
+3. [`NewRB`](./structure/tree/rbtree.go#L23):  Create a new Red-Black Tree
+
+---
+##### Types
+
+1. [`AVL`](./structure/tree/avl.go#L8): No description provided.
+
+2. [`BinarySearch`](./structure/tree/bstree.go#L13): No description provided.
+
+3. [`Node`](./structure/tree/tree.go#L25): No description provided.
+
+4. [`RB`](./structure/tree/rbtree.go#L18): No description provided.
+
+
+---
+</details><details>
+	<summary> <strong> tree_test </strong> </summary>	
+
+---
+
+##### Functions:
+
+1. [`FuzzRBTree`](./structure/tree/rbtree_test.go#L90): No description provided.
 
 ---
 </details><details>
@@ -968,6 +977,7 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 
 1. [`Decrypt`](./cipher/xor/xor.go#L19):  Decrypt decrypts with Xor encryption
 2. [`Encrypt`](./cipher/xor/xor.go#L10):  Encrypt encrypts with Xor encryption after converting each character to byte The returned value might not be readable because there is no guarantee which is within the ASCII range If using other type such as string, []int, or some other types, add the statements for converting the type to []byte.
+3. [`FuzzXOR`](./cipher/xor/xor_test.go#L108): No description provided.
 
 ---
 </details>
